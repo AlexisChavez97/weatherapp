@@ -1,4 +1,23 @@
-<div class="w-full text-center">
-  <p><%= @weather_report.city_name %></p>
-  <img class="mx-auto" src="<% @weather_report.icon %>">
+<h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center mt-10"><%= @weather_report.city_name %></h1>
+
+<div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-md">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96">
+      <img class="rounded-t-lg m-auto h-44 w-44" src="<%= @weather_report.icon %>"/>
+      <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center ml-3"><%= @weather_report.temperature_to_degrees %></h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center font-mono"><%= @weather_report.condition %></p>
+      </div>
+      <div class="flex items-center justify-between">
+        <div class="text-sm ml-10">
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center font-mono">Lat: <%= @weather_report.latitude %></p>
+        </div>
+        <div class="text-sm mr-10">
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center font-mono">Lon: <%= @weather_report.longitude %></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<%= render "shared/search_bar", weather_report: @weather_report %>
