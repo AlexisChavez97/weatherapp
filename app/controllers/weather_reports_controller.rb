@@ -3,7 +3,9 @@
 class WeatherReportsController < ApplicationController
   before_action :authenticate_user!
 
-  def index; end
+  def index
+    @weather_reports = current_user.weather_reports.recent
+  end
 
   def new
     @weather_report = WeatherReport.new

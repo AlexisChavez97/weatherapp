@@ -11,6 +11,9 @@
     <%= javascript_importmap_tags %>
   </head>
   <body class="h-full">
+    <header>
+      <%= render "shared/navbar" %>
+    </header>
     <main>
       <%= yield %>
     </main>
