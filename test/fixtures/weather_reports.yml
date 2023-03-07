@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+valid:
+  iata_code: LAX
+  city_name: Los Angeles
+  condition: Sunny
+  time: "2020-01-01 12:00:00"
+  temperature: 70
+  latitude: 34.0522
+  longitude: -118.2437
+  icon: "//cdn.weatherapi.com/weather/64x64/day/113.png"

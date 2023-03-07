@@ -1,0 +1,41 @@
+{
+  "location": {
+      "name": "Los Angeles Airport",
+      "region": "Los Angeles",
+      "country": "United States of America",
+      "lat": 34.05,
+      "lon": -118.24,
+      "tz_id": "America/Los_Angeles",
+      "localtime_epoch": 1678211024,
+      "localtime": "2023-03-07 9:43"
+  },
+  "current": {
+      "last_updated_epoch": 1678210200,
+      "last_updated": "2023-03-07 09:30",
+      "temp_c": 12.0,
+      "temp_f": 53.6,
+      "is_day": 1,
+      "condition": {
+          "text": "Partly cloudy",
+          "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+          "code": 1000
+      },
+      "wind_mph": 2.2,
+      "wind_kph": 3.6,
+      "wind_degree": 10,
+      "wind_dir": "N",
+      "pressure_mb": 1021.0,
+      "pressure_in": 30.16,
+      "precip_mm": 0.0,
+      "precip_in": 0.0,
+      "humidity": 58,
+      "cloud": 0,
+      "feelslike_c": 11.7,
+      "feelslike_f": 53.0,
+      "vis_km": 16.0,
+      "vis_miles": 9.0,
+      "uv": 2.0,
+      "gust_mph": 4.7,
+      "gust_kph": 7.6
+  }
+}
