@@ -8,7 +8,7 @@ class WeatherReportsControllerTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:valid)
     @weather_report = weather_reports(:valid)
-    stub_weather_api
+    stub_weather_service
     sign_in @user
   end
 

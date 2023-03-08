@@ -14,7 +14,7 @@
           <% end %>
           <% @weather_reports.each do |weather_report| %>
             <div class="hidden duration-700 ease-in-out bg-teal-100" data-carousel-item="active">
-                <img src="<%= "#{weather_report.icon}" %>" class="absolute block w-full max-w-md -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                <img src="<%= "#{weather_report.icon}" %>" class="h-28 w-28 absolute block w-full max-w-xs -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                 <div class="flex items-center justify-center">
                   <div class="text-sm mr-10 mt-5">
                     <h5 class="text-xl font-bold text-slate-600 dark:text-white text-center"><%= weather_report.city_name %></h5>

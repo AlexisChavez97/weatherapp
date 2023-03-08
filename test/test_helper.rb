@@ -15,8 +15,8 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
 
-  def stub_weather_api
-    stub_request(:get, "http://api.weatherapi.com/v1/current.json?key=#{ENV["WEATHER_API_KEY"]}&q=LAX").
+  def stub_weather_service
+    stub_request(:get, "http://api.weatherapi.com/v1/current.json?key=#{ENV["WEATHER_API_KEY"]}&q=iata:LAX").
       to_return(status: 200, body: File.read(Rails.root.join("test", "fixtures", "files", "weather_api_response.json")), headers: {})
   end
 end
