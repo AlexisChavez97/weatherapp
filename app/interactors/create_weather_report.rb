@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "logic/city_forecast.rb"
+require "logic/weather_service.rb"
 
 class CreateWeatherReport
   include Interactor
@@ -27,6 +27,10 @@ class CreateWeatherReport
   private
 
   def weather_report_details
-    @weather_report_details ||= ::Logic::CityForecast.new(context.params[:iata_code])
+    @weather_report_details ||= ::Logic::WeatherService.new(context.params[:iata_code])
+  end
+
+  def check_city_exists
+    weather_report_details.bad_request?
   end
 end
